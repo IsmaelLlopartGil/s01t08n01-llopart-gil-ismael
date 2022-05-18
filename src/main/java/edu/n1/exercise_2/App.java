@@ -18,7 +18,9 @@ public class App {
 		strings.add("Érase que se era");
 		strings.add("ultima");
 
-		List<String> listWithOAndMoreThanFiveLetters = strings.stream().filter(c -> c.contains("o") && c.length()>5).collect(Collectors.toList());
+		List<String> listWithOAndMoreThanFiveLetters = strings.stream()
+				.filter(c -> c.contains("o") && c.length()>5)
+				.collect(Collectors.toList());
 
 		System.out.println(listWithOAndMoreThanFiveLetters);
 
