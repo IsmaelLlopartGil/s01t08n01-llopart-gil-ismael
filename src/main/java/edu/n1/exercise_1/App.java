@@ -17,15 +17,13 @@ public class App {
 		strings.add("Érase que se era");
 		strings.add("ultima");
 
-		List<String> listWithO = strings.stream().filter(c -> c.contains("o")).collect(Collectors.toList());
-
-		System.out.println(listWithO);
-
+		System.out.println(strings.stream()
+				.filter(c -> c.contains("o"))
+				.collect(Collectors.toList()));
 	}
 
 	public static void main(String[] args) {
 		App app = new App();
 		app.start();
 	}
-
 }
